@@ -9,7 +9,7 @@ app.use(jsonParser);
 app.use(express.static(path.join(__dirname, './build')));
 
 // test GET endpoint
-app.get('/wutang', function(req, res) {
+app.get('/', function(req, res) {
 	console.log("hit");
     res.json({wutang: "clan"});
 });
